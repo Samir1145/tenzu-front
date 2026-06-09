@@ -68,7 +68,7 @@ import { PLUGINS_TOKEN } from "../app.config";
       <a class="h-6" [routerLink]="'/'" [attr.aria-label]="t('go_home')">
         <mat-icon class="icon-full" [svgIcon]="!darkModeOn() ? 'logo-text' : 'logo-text-dark'" />
       </a>
-      <app-env-banner class="grow px-4" />
+      <div class="grow"></div>
       @for (item of toolBarStore.items(); track item.eventName) {
         <button
           *transloco="let t"
